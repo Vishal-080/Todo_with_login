@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { GoogleGenAI } from "@google/genai";
 
+
 const Todo = () => {
 
   const [todo, setTodo] = useState("");
@@ -16,7 +17,7 @@ async function main() {
   console.log(response.text);
 }
 
-await main();
+async => main();
 
   return (
     <div><input type="text" placeholder="Type here" className="input" />

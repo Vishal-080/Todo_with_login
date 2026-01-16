@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { GoogleGenAI } from "@google/genai";
+// import { GoogleGenAI } from "@google/genai";
 
 
 const Todo = () => {
@@ -7,17 +7,17 @@ const Todo = () => {
   const [todo, setTodo] = useState("");
   
 
-const ai = new GoogleGenAI({});
+// const ai = new GoogleGenAI({});
 
-async function main() {
-  const response = await ai.models.generateContent({
-    model: "gemini-2.5-flash",
-    contents: "Explain how to learn everything about AI, i'm frontend developer with 6month of experience",
-  });
-  console.log(response.text);
-}
+// async function main() {
+//   const response = await ai.models.generateContent({
+//     model: "gemini-2.5-flash",
+//     contents: "Explain how to learn everything about AI, i'm frontend developer with 6month of experience",
+//   });
+//   console.log(response.text);
+// }
 
-async => main();
+// async => main();
 
   return (
     <div><input type="text" placeholder="Type here" className="input" />
